@@ -1,0 +1,43 @@
+哈哈  这直译的文件名，笑了半天。
+这本是H5的神书！！！
+书籍源码
+header  标记头部区域的内容（用于整个页面或者页面中的一块区域）
+footer 	标记脚部区域的内容 （用于整个页面或者页面中的一块区域）
+section	web页面中的一块区域
+article	独立的文章内容
+aside	相关内容或者引文
+nav		导航类辅助内容
+
+1  	selectors API 简化选取操作
+querySelectors()
+querySelectorsAll( )
+
+2	javaScript 的window.json API
+parse（）将字符串序列成DOM对象 
+Stringify( ) 将DOM对象转成字符串
+
+3	DOM level 3 事件处理API
+添加一个监听器：addEventListener()
+调度器：dispatchEvent( )
+
+4	convas API 
+用过document.getElementById选择Convas的ID 
+getContext获得“2D”上下文对象
+通过拿到Convas上下文对象来操作以下API：
+beginPath()说明开始绘制
+moveTo(x,y) 不绘制，只是将当前位置移动到 新的目标坐标（x,y）
+lineTO(x,y)    不仅将当前位置移动到新的目标坐标（x,y），而且在两个坐标之间画一条直线 
+save()  保存convas 使得变换后能恢复 ； restore() 恢复
+translate（x,y）变换起始坐标，再moveTo（x,y）确定起点 lineTo（x,y）线条落点
+stroke() 绘制
+fill（）填充
+完成convas的操作
+closePath() 连接起点，闭合路径
+
+5 convas的样式（假设context是获取的convas上下文对象）
+context.lineWidth = （加宽线条）值
+context.lineJoin =  'round' 平滑路径的接合点
+context.strokeStyle = '#ccc'    颜色值   设置线条的颜色
+context.fillStyle =  '#ccc' 颜色值  填充线条勾画的形状内的颜色
+context.fill();  开始填充
+context.fillRect(x,y,x1,y1) 一步到位绘制图像
